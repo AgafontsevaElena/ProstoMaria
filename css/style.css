@@ -1,0 +1,240 @@
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+body {
+	margin: 0;
+	font-family: 'Marmelad', sans-serif;
+	color: white;
+}
+
+@font-face {
+	font-family: 'icomoon';
+	src:    url('../fonts/icomoon.eot?uzn4vj');
+	src:    url('../fonts/icomoon.eot?uzn4vj#iefix') format('embedded-opentype'),
+	url('../fonts/icomoon.ttf?uzn4vj') format('truetype'),
+	url('../fonts/icomoon.woff?uzn4vj') format('woff'),
+	url('../fonts/icomoon.svg?uzn4vj#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'icomoon' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	display: inline-block;
+	text-align: center;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-man:before {
+	content: "\e901";
+}
+.icon-woman:before {
+	content: "\e902";
+}
+.icon-instagram:before {
+	content: "\e900";
+}
+.icon-vk:before {
+	content: "\e903";
+}
+
+.container {
+    width: 1200px;
+    padding: 0;
+	box-shadow: 0px 0px 12px 2px black;
+
+}
+header {
+
+    background-color: #f8c7b6;
+
+}
+header h1 {
+	display: inline-block;
+}
+.logo {
+	text-align: center;
+}
+.logo img {
+
+	margin: 0 auto;
+}
+
+
+.menu-item a {
+	text-decoration: none;
+	display: block;
+    color: white;
+	padding: 15px 10px 15px 10px;
+}
+.menu-item-first {
+    margin-left: 60px;
+}
+.menu-item:hover {
+    background-color: rgba(202, 202, 202, 0.5 );
+    border-radius: 5px;
+}
+
+
+.glyphicon-scissors {
+    font-size: 40px;
+}
+.main {
+    background-color: white;
+}
+
+
+
+
+.services {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.item  {
+	text-align: center;
+}
+.women {
+	padding-top: 80px;
+}
+.women h2 {
+	padding-top: 45px;
+}
+/*.item::before {
+
+    content: "";
+    width: 106px;
+    height: 109px;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 31px;
+    display: block;
+    background-repeat: no-repeat;
+
+}
+.men::before {
+    background-image: url(../img/men.jpg);}
+.women::before {
+   background-image: url(../img/women.jpg);
+
+}
+.photo::before {
+    background-image: url(../img/photo.jpg);
+}
+*/
+
+.about-myself {
+	height: 570px;
+	background: #FFFFA3;
+
+}
+.about-myself h2 {
+	padding: 50px;
+	font-size: 30px;
+	padding-bottom: 25px;
+}
+.about-myself p {
+	width: 600px;
+	padding-left: 50px;
+	font-size: 24px;
+
+}
+.about-myself img {
+	background: azure;
+	float: right;
+	margin: 50px;
+	margin-bottom: 0;
+}
+.inst-photo {
+	height: 470px;
+	background-color: ghostwhite;
+	margin-bottom: 5px;
+	font-size: 40px;
+	text-align: center;
+	color: black;
+}
+
+.about-women {
+	background: #FDA2AD;
+	margin: 0px;
+}
+.about p {}
+.about {
+	font-size: 24px;
+	padding: 30px;
+}
+.about-women img {
+	background-color: #2aabd2;
+}
+.about-photo {
+	height: 570px;
+	background: white;
+	margin: 0px;
+
+}
+.about-men {
+	height: 570px;
+	background: #9EC3ED;
+	margin: 0px;
+}
+.social-btn {
+	display: inline-block;
+	width: 43px;
+	height: 43px;
+	margin: 0 2px;
+
+	font-size: 0;
+	vertical-align: top;
+	text-decoration: none;
+
+	background-color: #2b669a;
+	border-radius: 5px;
+	text-align: center;
+
+}
+
+.social-btn-inst {
+	background-color: white;
+}
+.icon-vk {
+	font-size: 43px;
+	color: white;
+	line-height: 43px;
+}
+.icon-instagram {
+	font-size: 30px;
+	color: #2b669a;
+	line-height: 43px;
+}
+footer {
+	background-color: #3c3c3c;
+	text-align: center;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 1200px;
+	min-height: 80px;
+	color: white;
+
+}
+footer.row {
+	margin-left: 350px;
+	margin-top: -80px;
+}
+
+.footer-contacts {
+	text-align: left;
+}
+
