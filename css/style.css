@@ -5,236 +5,244 @@
 }
 body {
 	margin: 0;
+    font: 100%/1.5em;
 	font-family: 'Marmelad', sans-serif;
-	color: white;
+	color: black;
+    /*background: url("../img/hair.jpg");
+    background-repeat: no-repeat;*/
+
 }
+.fluid-bg {
+
+    background: url("../img/hair.jpg");
+    background-repeat: no-repeat;
+}
+
 
 @font-face {
-	font-family: 'icomoon';
-	src:    url('../fonts/icomoon.eot?uzn4vj');
-	src:    url('../fonts/icomoon.eot?uzn4vj#iefix') format('embedded-opentype'),
-	url('../fonts/icomoon.ttf?uzn4vj') format('truetype'),
-	url('../fonts/icomoon.woff?uzn4vj') format('woff'),
-	url('../fonts/icomoon.svg?uzn4vj#icomoon') format('svg');
-	font-weight: normal;
-	font-style: normal;
+    font-family: Cassandra;
+    src: url(../fonts/Cassandra.ttf);
 }
-
-[class^="icon-"], [class*=" icon-"] {
-	/* use !important to prevent issues with browser extensions that change fonts */
-	font-family: 'icomoon' !important;
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-	display: inline-block;
-	text-align: center;
-
-	/* Better Font Rendering =========== */
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+img {
+    max-width: 100%;
+    height: auto;
 }
-
-.icon-man:before {
-	content: "\e901";
-}
-.icon-woman:before {
-	content: "\e902";
-}
-.icon-instagram:before {
-	content: "\e900";
-}
-.icon-vk:before {
-	content: "\e903";
-}
-
-.container {
-    width: 1200px;
-    padding: 0;
-	box-shadow: 0px 0px 12px 2px black;
-
-}
-header {
-
-    background-color: #f8c7b6;
-
-}
-header h1 {
-	display: inline-block;
-}
-.logo {
-	text-align: center;
-}
-.logo img {
-
-	margin: 0 auto;
-}
-
-
-.menu-item a {
-	text-decoration: none;
-	display: block;
-    color: white;
-	padding: 15px 10px 15px 10px;
-}
-.menu-item-first {
-    margin-left: 60px;
-}
-.menu-item:hover {
-    background-color: rgba(202, 202, 202, 0.5 );
-    border-radius: 5px;
-}
-
-
-.glyphicon-scissors {
-    font-size: 40px;
-}
-.main {
-    background-color: white;
-}
-
-
-
-
-.services {
-	padding-top: 50px;
-	padding-bottom: 50px;
-}
-.item  {
-	text-align: center;
-}
-.women {
-	padding-top: 80px;
-}
-.women h2 {
-	padding-top: 45px;
-}
-/*.item::before {
-
-    content: "";
-    width: 106px;
-    height: 109px;
-    margin-top: 60px;
+#slider-wrap{ /* Оболочка слайдера и кнопок */
+    width:404px;
     margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 31px;
-    display: block;
+}
+#slider{ /* Оболочка слайдера */
+    width:400px;
+    height:400px;
+    overflow: hidden;
+    border: #68D6DC solid 2px;
+    position:relative;
+    }
+.slide{ /* Слайд */
+    width:100%;
+    height:100%;
+}
+.sli-links{ /* Кнопки смены слайдов */
+    margin-top:10px;
+    text-align:center;}
+.sli-links .control-slide{
+    margin:2px;
+    display:inline-block;
+    width:16px;
+    height:16px;
+    overflow:hidden;
+    text-indent:-9999px;
+    background:url(../img/radioBg.png) center bottom no-repeat;}
+.sli-links .control-slide:hover{
+    cursor:pointer;
+    background-position:center center;}
+.sli-links .control-slide.active{
+    background-position:center top;}
+#prewbutton, #nextbutton{ /* Ссылка "Следующий" и "Педыдущий" */
+    display:block;
+    width:15px;
+    height:100%;
+    position:absolute;
+    top:0;
+    overflow:hidden;
+    text-indent:-999px;
+    background:url(../img/arrowBg.png) left center no-repeat;
+    opacity:0.8;
+    z-index:3;
+    outline:none !important;}
+#prewbutton{left:10px;}
+#nextbutton{
+    right:10px;
+    background:url(../img/arrowBg.png) right center no-repeat;}
+#prewbutton:hover, #nextbutton:hover{
+    opacity:1;}
+.sprite {
+    background-image: url(../img/sprite.png);
     background-repeat: no-repeat;
-
-}
-.men::before {
-    background-image: url(../img/men.jpg);}
-.women::before {
-   background-image: url(../img/women.jpg);
-
-}
-.photo::before {
-    background-image: url(../img/photo.jpg);
-}
-*/
-
-.about-myself {
-	height: 570px;
-	background: #FFFFA3;
-
-}
-.about-myself h2 {
-	padding: 50px;
-	font-size: 30px;
-	padding-bottom: 25px;
-}
-.about-myself p {
-	width: 600px;
-	padding-left: 50px;
-	font-size: 24px;
-
-}
-.about-myself img {
-	background: azure;
-	float: right;
-	margin: 50px;
-	margin-bottom: 0;
-}
-.inst-photo {
-	height: 470px;
-	background-color: ghostwhite;
-	margin-bottom: 5px;
-	font-size: 40px;
-	text-align: center;
-	color: black;
+    display: block;
 }
 
-.about-women {
-	background: #FDA2AD;
-	margin: 0px;
+.sprite-icon-blue {
+    width: 200px;
+    height: 55px;
+    background-position: -5px -5px;
 }
-.about p {}
-.about {
-	font-size: 24px;
-	padding: 30px;
+
+.sprite-icon-orange {
+    width: 200px;
+    height: 55px;
+    background-position: -5px -70px;
 }
-.about-women img {
-	background-color: #2aabd2;
+
+.sprite-icon-pink {
+    width: 200px;
+    height: 55px;
+    background-position: -5px -135px;
 }
-.about-photo {
-	height: 570px;
-	background: white;
-	margin: 0px;
+
+.sprite-icon-yellow {
+    width: 200px;
+    height: 55px;
+    background-position: -5px -200px;
+}
+
+header {
+	border-bottom: 1px dashed black;
+}
+.header-logo {
+    position: relative;
+}
+.header-logo .scissors {
+    position: absolute;
+    top: 85px;
+    right: 0px;
+}
+.container {
+	width: 970px;
 
 }
-.about-men {
-	height: 570px;
-	background: #9EC3ED;
-	margin: 0px;
+
+#navigation li a {
+    color: #000;
+    font-family: Cassandra;
+    font-size: 1.75em;
+    background: none;
+    /*padding-bottom: 40px;*/
+    -webkit-transition: color 0.2s ease;
+
 }
+
+#navigation li a:hover {
+     color: darkgray;
+
+ }
+#navigation li.active a {
+    background-image: url("../img/lak.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #9D5B22;
+}
+
+div.text {
+	width: 400px;
+    height: 600px;
+    background: url("../img/snow.png");
+    
+}
+div.text h1 {
+    font-size: 2.5em;
+    font-family: Cassandra;
+}
+div.text p {
+    font-size: 1.4em;
+    line-height: 1.5em;
+    font-family: 'Jura', sans-serif;
+}
+
+.services-text div.services-text-price {
+    background: bisque url("../img/snow.png");
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+
+}
+
+
+.services-text-price h2 {
+    font-size: 28px;
+    color: #983C05;
+    font-family: 'Poiret One', cursive;
+    padding-top: 5%;
+}
+ .services-text-price h3 {
+     font-size: 28px;
+     font-family: Cassandra;
+     color: #983C05;
+
+}
+.services-text-price p {
+    font-size: 18px;
+    font-family: 'Jura', sans-serif;
+    color: #001C2F;
+}
+.row {
+    margin-top: 60px;
+
+}
+div.content {
+    padding-left: 30px;
+}
+
+footer {
+    position: relative;
+    margin-top: 50px;
+    padding-top: 25px;
+    border-top: 1px dashed black;
+    min-height: 70px;
+}
+footer .scissorsfooter {
+    position: absolute;
+    top: -28px;
+}
+.footer-social p {
+    margin: 0;
+    margin-bottom: 15px;
+}
+
 .social-btn {
-	display: inline-block;
-	width: 43px;
-	height: 43px;
-	margin: 0 2px;
+    display: inline-block;
+    width: 43px;
+    height: 43px;
+    margin: 0 2px;
 
-	font-size: 0;
-	vertical-align: top;
-	text-decoration: none;
+    font-size: 0;
+    vertical-align: top;
+    text-decoration: none;
 
-	background-color: #2b669a;
-	border-radius: 5px;
-	text-align: center;
 
+    transition:
+
+            background-color 0.5s;
+}
+
+.social-btn:hover {
+    background-color: #ffffff;
+}
+
+.social-btn-vk {
+    background: #68D6DC url("../img/icon-vk.png") no-repeat center;
 }
 
 .social-btn-inst {
-	background-color: white;
-}
-.icon-vk {
-	font-size: 43px;
-	color: white;
-	line-height: 43px;
-}
-.icon-instagram {
-	font-size: 30px;
-	color: #2b669a;
-	line-height: 43px;
-}
-footer {
-	background-color: #3c3c3c;
-	text-align: center;
-	position: fixed;
-	left: 0;
-	bottom: 0;
-	width: 1200px;
-	min-height: 80px;
-	color: white;
-
-}
-footer.row {
-	margin-left: 350px;
-	margin-top: -80px;
+    background: #68D6DC url("../img/icon-inst.png") no-repeat center;
 }
 
-.footer-contacts {
-	text-align: left;
+.social-btn-vk:hover {
+    background: black  url("../img/icon-vk.png") no-repeat center;
+}
+
+
+.social-btn-inst:hover {
+    background: black  url("../img/icon-inst.png") no-repeat center;
 }
 

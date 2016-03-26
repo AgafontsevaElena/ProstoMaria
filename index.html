@@ -1,92 +1,229 @@
 <!DOCTYPE html>
 <html lang="ru">
     <head>
-        <meta charset="utf-8">
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Просто Мария</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" 
+        <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="jquery-1.7.2.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
               integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
         <link href='https://fonts.googleapis.com/css?family=Marmelad&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Poiret+One&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Jura:400,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/style.css">
     </head>
-    <body>
+    <body class="fluid-bg">
     <div class="container">
-        <header class="">
-            <div class="logo">
-                <img src="img/website-header.png" width="800" height="600">
+        <header>
+            <div class="header-logo">
+                <img src="http://dummyimage.com/100x50/000/fff.png&text=+scissors">
+                <h2>ProstoM</h2>
+                <img class="scissors" src="img/Scissors.png">
             </div>
+
         </header>
-        <main class="main">
-            <div class="services row">
-                <a href="#women"><div class="item men col-lg-offset-3 col-lg-2"><img src="img/girl1.png"><h2>Девушкам</h2></div></a>
-                <a href="#photo"><div class="item women col-lg-2"><img src="img/photo.jpg"><h2>Фотосессии</h2></div></a>
-                <a href="#men"><div class="item photo col-lg-2"><img src="img/boy.png"><h2>Парням</h2></div></a>
-            </div>
-            <div class="about-myself">
-                <img width="450" height="500">
-                <h2>Быть стильным несложно</h2>
-                <p>то текст. Нажмите один раз и выберите «Редактировать текст» или просто кликните дважды, чтобы добавить свой текст и настроить шрифт. Вы можете переместить его в любое место на странице. Расскажите посетителям сайта о себе. Чтобы удалить этот текст, нажмите один раз и выберите значок «Корзина».
-​
-Здесь будет удачно смотреться текст о вашей компании и услугах. Используйте эту возможность, чтобы выгодно представить себя и свою компанию клиентам. Расскажите интересную историю, например, как вам в голову пришла идея собственного
-                </p>
-            </div>
-            <div class="inst-photo">Фото из инстаграма</div>
-            <div>
-                <p class=" about about-women">
-                    <a name="women"></a> Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут
-                    они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по
-                    всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой
-                    жаренные члены предложения залетают прямо в рот.
+        <main>
 
-                    Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ жизни.
-                    Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum решила выйти в большой мир
-                    грамматики.<br>
-                    <img src="img/fellow.svg" width="150" height="150">
-                    <img width="150" height="150">
-                    <img width="150" height="150">
-                    <img width="150" height="150">
-                    <img width="150" height="150">
-                    <img width="150" height="150"></p>
-            </div>
-            <div>
-                <p class="about about-photo">
-                    <a name="photo"></a>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут
-                    они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по
-                    всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой
-                    жаренные члены предложения залетают прямо в рот.
+            <ul id="navigation" class="nav nav-pills nav-justified" role="tablist">
+                <li role="presentation" class="active"><a href="#index-page" aria-controls="index-page" role="tab" data-toggle="tab">Главная</a></li>
+                <li role="presentation" class="two"><a href="#about-myself" aria-controls="about-myself" role="tab" data-toggle="tab">Обо мне</a></li>
+                <li role="presentation" class="three"><a href="#services" aria-controls="service" role="tab" data-toggle="tab">Услуги</a></li>
+                <li role="presentation" class="four"><a href="#contacts" aria-controls="contacts" role="tab" data-toggle="tab">Контакты</a></li>
+            </ul>
 
-                    Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ жизни.
-                    Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum решила выйти в большой мир
-                    грамматики.</p>
-            </div>
-            <div>
-                <p class=" about about-men">
-                    <a name="men"></a>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут
-                    они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по
-                    всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой
-                    жаренные члены предложения залетают прямо в рот.
+            <div class="content tab-content">
+                <div id="index-page" class="index-page row tab-pane active" role="tabpanel">
+                    <div class="index-page-text text col-md-6">
+                        <h1>Lorem Ipsum</h1>
+                        <p>
+                            Lorem Ipsum - это текст-"рыба", часто используемый в
+                            печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой"
+                            для текстов на латинице с начала XVI века. В то время некий безымянный
+                            печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem
+                            Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без
+                            заметных изменений пять веков, но и перешагнул в электронный дизайн. Его
+                            популяризации в новое время послужили публикация листов Letraset с образцами
+                        </p>
+                    </div>
+                    <div class="index-page-img col-md-6">
+                        <div id="slider-wrap">
+                            <div id="slider">
+                                <div class="slide"><img src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/12346191_1538489006463788_230775513_n.jpg?ig_cache_key=MTE0NTgwNTk3NTY2NzExMDAwOQ%3D%3D.2" width="400" height="400"></div>
+                                <div class="slide"><img src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/12276731_179267729090261_1652456728_n.jpg?ig_cache_key=MTEzNDg1MTAxNTQ5NjQ2MjU0Ng%3D%3D.2" width="400" height="400"></div>
+                                <div class="slide"><img src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/12354078_1123581257676549_701792992_n.jpg?ig_cache_key=MTE0NTgwNTQ5MjAzMDMwNDM2MA%3D%3D.2" width="400" height="400"></div>
+                                <div class="slide"><img src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/12327974_981429845285042_1386995684_n.jpg?ig_cache_key=MTE0NTgwNTY1Nzk0MDE5MzM5MQ%3D%3D.2" width="400" height="400"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                    Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ жизни.
-                    Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum решила выйти в большой мир
-                    грамматики.</p>
+                <div id="about-myself" class="about-myself row tab-pane" role="tabpanel">
+                    <div class="about-myself-text text col-md-6">
+                        <h1>Малышкина Мария</h1>
+                        <p>
+                            Lorem Ipsum - это текст-"рыба", часто используемый в
+                            печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой"
+                            для текстов на латинице с начала XVI века. В то время некий безымянный
+                            печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem
+                            Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без
+                            заметных изменений пять веков, но и перешагнул в электронный дизайн. Его
+                            популяризации в новое время послужили публикация листов Letraset с образцами
+                        </p>
+                    </div>
+                    <div class="about-myself-img col-md-6">
+                        <img src="http://dummyimage.com/400x600/000/fff.png&text=gallery">
+                    </div>
+                </div>
+
+                <div id="services" class="services  tab-pane" role="tabpanel">
+                   <div class="row row1">
+                        <div class="services-text col-md-8">
+                            <div class="services-text-price row">
+                                <h2 class="price col-md-4">от 500р.</h2>
+                                <div class="description-service col-md-8">
+                                    <h3>Образ для фотосессии</h3>
+                                    <p>Обсуждение общей концепции, прическа, макияж, маникюр и все что будет необходимо</p>
+                                </div>
+                            </div>
+                            <div class="services-text-price row">
+                                <h2 class="price col-md-4">от 500р.</h2>
+                                <div class="description-service col-md-8">
+                                    <h3>Образ для фотосессии</h3>
+                                    <p>Обсуждение общей концепции, прическа, макияж, маникюр и все что будет необходимо</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="services-img col-md-4">
+                            <img src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/12555832_1710555525856091_173670735_n.jpg?ig_cache_key=MTE3NDY1MzY1MDAxMzI4NzI1OQ%3D%3D.2">
+                        </div>
+                   </div>
+
+                    <div class="row row2">
+                        <div class="services-img col-md-4">
+                            <img src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/12357569_856340771147221_1003326198_n.jpg?ig_cache_key=MTEzODE5NTk0NTQxMzQzOTkxMQ%3D%3D.2">
+                        </div>
+                        <div class="services-text col-md-8">
+                            <div class="services-text-price row">
+                                <div class="description-service col-md-8">
+                                    <h3>Образ для фотосессии</h3>
+                                    <p>Обсуждение общей концепции, прическа, макияж, маникюр и все что будет необходимо</p>
+                                </div>
+                                <h2 class="price col-md-4">от 500р.</h2>
+                            </div>
+                            <div class="services-text-price row">
+                                <div class="description-service col-md-8">
+                                    <h3>Образ для фотосессии</h3>
+                                    <p>Обсуждение общей концепции, прическа, макияж, маникюр и все что будет необходимо</p>
+                                </div>
+                                <h2 class="price col-md-4">от 500р.</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div id="contacts" class="contacts row tab-pane" role="tabpanel">
+                    <div class="contacts-address text col-md-6">
+                        <p>Адрес: г. Самара, Демократическая ул., 1</p>
+                        <h3>Режим работы:</h3>
+                        <p>Каждый день с 9-21:00 можно позвонить<br> по телефону 8-927-751-64-42 и записаться</p>
+                    </div>
+                    <div class="contacts-map col-md-6">
+                        <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=lky-UsiBq7OBVXXXYuzIzrJA1YDEhUVH&width=450&height=600&lang=ru_RU&sourceType=constructor"></script>
+                    </div>
+                </div>
+
             </div>
+
         </main>
-        <footer class="main-footer row">
-                <section class="footer-contacts col-lg-4">
-                    <a name="contacts"></a>Парикмахер-стилист &#171;Просто Мария&#187;<br>
-                    Адрес:г.Самара,ул.Демократическая,д.19/8<br>
-                    <a href="#">Как меня найти?</a><br>
-                    Телефон:+7(495)666-02-66
-                </section>
-                <section class="footer-social col-lg-4">
-                    <p>Давайте дружить!</p>
-                    <a class="social-btn social-btn-vk" href="http://vk.com/yaprostomariya"><span class="icon-vk"></span></a>
-                    <a class="social-btn social-btn-inst" href="https://www.instagram.com/prostomariya12/"><span class="icon-instagram"></span></a>
-                </section>
-                <section class="footer-copyright col-lg-4">
-                    <p>Разработано:</p>
-                    <a class="btn" href="#">kumquat.ru</a>
-                </section>
+        <footer>
+            <img class="scissorsfooter" src="img/Scissorsfooter.png">
+            <a href="" class="col-md-6">kumquat.ru</a>
+            <section class="footer-social col-md-6">
+                <a class="social-btn social-btn-vk" href="https://vk.com/yaprostomariya">Вконтакте</a>
+                <a class="social-btn social-btn-inst" href="https://www.instagram.com/prostomariya12/">Инстаграм</a>
+            </section>
         </footer>
-        </div>
-    </body>
+    <script>
+        $(function() {
+            $('#navigation a').click(function (e) {
+                e.preventDefault();
+                $(this).tab('show');
+            });
+        });
+    </script>
+        <script>
+
+            (function ($) {
+                var hwSlideSpeed = 700;
+                var hwTimeOut = 9000;
+                var hwNeedLinks = true;
+
+                $(document).ready(function(e) {
+                    $('.slide').css(
+                            {"position" : "absolute",
+                                "top":'0', "left": '0'}).hide().eq(0).show();
+                    var slideNum = 0;
+                    var slideTime;
+                    slideCount = $("#slider .slide").size();
+                    var animSlide = function(arrow){
+                        clearTimeout(slideTime);
+                        $('.slide').eq(slideNum).fadeOut(hwSlideSpeed);
+                        if(arrow == "next"){
+                            if(slideNum == (slideCount-1)){slideNum=0;}
+                            else{slideNum++}
+                        }
+                        else if(arrow == "prew")
+                        {
+                            if(slideNum == 0){slideNum=slideCount-1;}
+                            else{slideNum-=1}
+                        }
+                        else{
+                            slideNum = arrow;
+                        }
+                        $('.slide').eq(slideNum).fadeIn(hwSlideSpeed, rotator);
+                        $(".control-slide.active").removeClass("active");
+                        $('.control-slide').eq(slideNum).addClass('active');
+                    }
+                    if(hwNeedLinks){
+                        var $linkArrow = $('<a id="prewbutton" href="#">&lt;</a><a id="nextbutton" href="#">&gt;</a>')
+                                .prependTo('#slider');
+                        $('#nextbutton').click(function(){
+                            animSlide("next");
+                            return false;
+                        })
+                        $('#prewbutton').click(function(){
+                            animSlide("prew");
+                            return false;
+                        })
+                    }
+                    var $adderSpan = '';
+                    $('.slide').each(function(index) {
+                        $adderSpan += '<span class = "control-slide">' + index + '</span>';
+                    });
+                    $('<div class ="sli-links">' + $adderSpan +'</div>').appendTo('#slider-wrap');
+                    $(".control-slide:first").addClass("active");
+                    $('.control-slide').click(function(){
+                        var goToNum = parseFloat($(this).text());
+                        animSlide(goToNum);
+                    });
+                    var pause = false;
+                    var rotator = function(){
+                        if(!pause){slideTime = setTimeout(function(){animSlide('next')}, hwTimeOut);}
+                    }
+                    $('#slider-wrap').hover(
+                            function(){clearTimeout(slideTime); pause = true;},
+                            function(){pause = false; rotator();
+                            });
+                    rotator();
+                });
+            })(jQuery);
+
+        </script>
+
+
+</div>
+</body>
 </html>
