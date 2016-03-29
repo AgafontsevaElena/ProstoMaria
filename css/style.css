@@ -12,10 +12,26 @@ body {
     background-repeat: no-repeat;*/
 
 }
-.fluid-bg {
 
-    background: url("../img/hair.jpg");
-    background-repeat: no-repeat;
+@media screen and (min-width: 1024px) {
+    .fluid-bg {
+        background: url("../img/hair.jpg") no-repeat;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    .services .row2 img {
+        margin-bottom: 25px;
+    }
+
+}
+@media screen and (max-width: 767px) {
+    .services-text-price h2.price {
+        padding-top: 0%;
+        padding-left: 3%;
+    }
+
 }
 
 
@@ -28,11 +44,11 @@ img {
     height: auto;
 }
 #slider-wrap{ /* Оболочка слайдера и кнопок */
-    width:404px;
+    /*width:404px;*/
     margin-left: auto;
 }
 #slider{ /* Оболочка слайдера */
-    width:400px;
+    /*width:400px;*/
     height:400px;
     overflow: hidden;
     border: #68D6DC solid 2px;
@@ -117,10 +133,11 @@ header {
     top: 85px;
     right: 0px;
 }
-.container {
-	width: 970px;
+.container-fluid {
+	max-width: 970px;
 
 }
+
 
 #navigation li a {
     color: #000;
@@ -144,9 +161,9 @@ header {
 }
 
 div.text {
-	width: 400px;
-    height: 600px;
-    background: url("../img/snow.png");
+	/*width: 400px;
+    height: 600px;*/
+    background-color: rgba(238, 233, 233, 0.7);
     
 }
 div.text h1 {
@@ -160,7 +177,7 @@ div.text p {
 }
 
 .services-text div.services-text-price {
-    background: bisque url("../img/snow.png");
+    background-color: rgba(238, 233, 233, 0.7);
     margin: 0;
     margin-bottom: 20px;
     padding: 0;
@@ -172,7 +189,8 @@ div.text p {
     font-size: 28px;
     color: #983C05;
     font-family: 'Poiret One', cursive;
-    padding-top: 5%;
+    padding-top: 3%;
+    padding-left: 1%;
 }
  .services-text-price h3 {
      font-size: 28px;
@@ -194,16 +212,12 @@ div.content {
 }
 
 footer {
-    position: relative;
     margin-top: 50px;
     padding-top: 25px;
     border-top: 1px dashed black;
     min-height: 70px;
 }
-footer .scissorsfooter {
-    position: absolute;
-    top: -28px;
-}
+
 .footer-social p {
     margin: 0;
     margin-bottom: 15px;
