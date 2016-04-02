@@ -4,8 +4,8 @@
         <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Просто Мария</title>
         <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="jquery-1.7.2.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+                integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
               integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
         <link href='https://fonts.googleapis.com/css?family=Marmelad&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
@@ -34,7 +34,7 @@
 
             <div class="content tab-content col-lg-12">
                 <div id="index-page" class="index-page row tab-pane active" role="tabpanel">
-                    <div class="index-page-text text col-md-6 col-xs-12">
+                    <div class="index-page-text text col-xs-11 col-sm-8 col-sm-offset-2 col-md-5 col-md-offset-0">
                         <h1>Lorem Ipsum</h1>
                         <p>
                             Lorem Ipsum - это текст-"рыба", часто используемый в
@@ -46,20 +46,28 @@
                             популяризации в новое время послужили публикация листов Letraset с образцами
                         </p>
                     </div>
-                    <div class="index-page-img col-md-6 col-xs-12">
-                        <div id="slider-wrap">
-                            <div id="slider">
-                                <div class="slide"><img src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/12346191_1538489006463788_230775513_n.jpg?ig_cache_key=MTE0NTgwNTk3NTY2NzExMDAwOQ%3D%3D.2" width="400" height="400"></div>
-                                <div class="slide"><img src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/12276731_179267729090261_1652456728_n.jpg?ig_cache_key=MTEzNDg1MTAxNTQ5NjQ2MjU0Ng%3D%3D.2" width="400" height="400"></div>
-                                <div class="slide"><img src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/12354078_1123581257676549_701792992_n.jpg?ig_cache_key=MTE0NTgwNTQ5MjAzMDMwNDM2MA%3D%3D.2" width="400" height="400"></div>
-                                <div class="slide"><img src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/12327974_981429845285042_1386995684_n.jpg?ig_cache_key=MTE0NTgwNTY1Nzk0MDE5MzM5MQ%3D%3D.2" width="400" height="400"></div>
-                            </div>
+                    <div class="index-page-img col-xs-11  col-sm-6 col-sm-offset-3 col-md-5 col-md-offset-1">
+
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="photo1"><img src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/12346191_1538489006463788_230775513_n.jpg?ig_cache_key=MTE0NTgwNTk3NTY2NzExMDAwOQ%3D%3D.2" width="400" height="400"></div>
+                            <div class="tab-pane" id="photo2"><img src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/12276731_179267729090261_1652456728_n.jpg?ig_cache_key=MTEzNDg1MTAxNTQ5NjQ2MjU0Ng%3D%3D.2" width="400" height="400"></div>
+                            <div class="tab-pane" id="photo3"><img src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/12354078_1123581257676549_701792992_n.jpg?ig_cache_key=MTE0NTgwNTQ5MjAzMDMwNDM2MA%3D%3D.2" width="400" height="400"></div>
+                            <div class="tab-pane" id="photo4"><img src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/12327974_981429845285042_1386995684_n.jpg?ig_cache_key=MTE0NTgwNTY1Nzk0MDE5MzM5MQ%3D%3D.2" width="400" height="400" width="400" height="400"></div>
                         </div>
+
+                        <ul class="index-page-galery">
+                            <li class="active"><a class="circle" href="#photo1" data-toggle="tab"></a></li>
+                            <li><a class="circle" href="#photo2" data-toggle="tab"></a></li>
+                            <li><a class="circle" href="#photo3" data-toggle="tab"></a></li>
+                            <li><a class="circle" href="#photo4" data-toggle="tab"></a></li>
+                        </ul>
+
                     </div>
+
                 </div>
 
                 <div id="about-myself" class="about-myself row tab-pane" role="tabpanel">
-                    <div class="about-myself-text text col-xs-11 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-0">
+                    <div class="about-myself-text text col-xs-11 col-sm-8 col-sm-offset-2 col-md-5 col-md-offset-0 ">
                         <h1>Малышкина Мария</h1>
                         <p>
                             Lorem Ipsum - это текст-"рыба", часто используемый в
@@ -71,8 +79,8 @@
                             популяризации в новое время послужили публикация листов Letraset с образцами
                         </p>
                     </div>
-                    <div class="about-myself-img col-md-6  col-sm-8 col-xs-12">
-                        <img src="http://dummyimage.com/400x600/000/fff.png&text=gallery">
+                    <div class="about-myself-img col-xs-11  col-sm-6 col-sm-offset-3 col-md-5 col-md-offset-1 ">
+                        <img src="http://dummyimage.com/400x555/000/fff.png&text=gallery">
                     </div>
                 </div>
 
@@ -125,22 +133,23 @@
 
 
                 <div id="contacts" class="contacts row tab-pane" role="tabpanel">
-                    <div class="contacts-address text col-md-6">
+                    <div class="contacts-address text col-xs-11 col-sm-8 col-sm-offset-2 col-md-5 col-md-offset-0 ">
                         <p>Адрес: г. Самара, Демократическая ул., 1</p>
                         <h3>Режим работы:</h3>
                         <p>Каждый день с 9-21:00 можно позвонить<br> по телефону 8-927-751-64-42 и записаться</p>
                     </div>
-                    <div class="contacts-map col-md-6">
-                        <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=lky-UsiBq7OBVXXXYuzIzrJA1YDEhUVH&width=450&height=600&lang=ru_RU&sourceType=constructor"></script>
+                    <div class="contacts-map hidden-xs  col-sm-6 col-sm-offset-3 col-md-5 col-md-offset-1 ">
+                        <div>
+                        <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=O_9eD262h_a8cwpBqnBY_K9rTIq_HVv6&width=400&height=575&lang=ru_RU&sourceType=constructor"></script>
+                        </div>
                     </div>
                 </div>
-
             </div>
 
         </main>
         <footer class="row">
-            <a href="" class="col-md-6 col-sm-6 col-xs-6">kumquat.ru</a>
-            <section class="footer-social col-md-6 col-sm-6 col-xs-6">
+            <a href="" class="col-md-6 col-sm-4 col-xs-4">kumquat.ru</a>
+            <section class="footer-social col-md-6 col-sm-8 col-xs-8">
                 <a class="social-btn social-btn-vk" href="https://vk.com/yaprostomariya">Вконтакте</a>
                 <a class="social-btn social-btn-inst" href="https://www.instagram.com/prostomariya12/">Инстаграм</a>
             </section>
@@ -153,74 +162,7 @@
             });
         });
     </script>
-        <script>
 
-            (function ($) {
-                var hwSlideSpeed = 700;
-                var hwTimeOut = 9000;
-                var hwNeedLinks = true;
-
-                $(document).ready(function(e) {
-                    $('.slide').css(
-                            {"position" : "absolute",
-                                "top":'0', "left": '0'}).hide().eq(0).show();
-                    var slideNum = 0;
-                    var slideTime;
-                    slideCount = $("#slider .slide").size();
-                    var animSlide = function(arrow){
-                        clearTimeout(slideTime);
-                        $('.slide').eq(slideNum).fadeOut(hwSlideSpeed);
-                        if(arrow == "next"){
-                            if(slideNum == (slideCount-1)){slideNum=0;}
-                            else{slideNum++}
-                        }
-                        else if(arrow == "prew")
-                        {
-                            if(slideNum == 0){slideNum=slideCount-1;}
-                            else{slideNum-=1}
-                        }
-                        else{
-                            slideNum = arrow;
-                        }
-                        $('.slide').eq(slideNum).fadeIn(hwSlideSpeed, rotator);
-                        $(".control-slide.active").removeClass("active");
-                        $('.control-slide').eq(slideNum).addClass('active');
-                    }
-                    if(hwNeedLinks){
-                        var $linkArrow = $('<a id="prewbutton" href="#">&lt;</a><a id="nextbutton" href="#">&gt;</a>')
-                                .prependTo('#slider');
-                        $('#nextbutton').click(function(){
-                            animSlide("next");
-                            return false;
-                        })
-                        $('#prewbutton').click(function(){
-                            animSlide("prew");
-                            return false;
-                        })
-                    }
-                    var $adderSpan = '';
-                    $('.slide').each(function(index) {
-                        $adderSpan += '<span class = "control-slide">' + index + '</span>';
-                    });
-                    $('<div class ="sli-links">' + $adderSpan +'</div>').appendTo('#slider-wrap');
-                    $(".control-slide:first").addClass("active");
-                    $('.control-slide').click(function(){
-                        var goToNum = parseFloat($(this).text());
-                        animSlide(goToNum);
-                    });
-                    var pause = false;
-                    var rotator = function(){
-                        if(!pause){slideTime = setTimeout(function(){animSlide('next')}, hwTimeOut);}
-                    }
-                    $('#slider-wrap').hover(
-                            function(){clearTimeout(slideTime); pause = true;},
-                            function(){pause = false; rotator();
-                            });
-                    rotator();
-                });
-            })(jQuery);
-
-        </script>
 
 
 </div>
