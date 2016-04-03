@@ -38,6 +38,11 @@ body {
     }
 
 }
+@media screen and (max-width: 562px) {
+   header .header-logo .scissors {
+        top: 100px;
+    }
+}
 @media screen and (max-width: 767px) {
     .services-text-price h2.price {
         padding-top: 0%;
@@ -55,84 +60,7 @@ img {
     max-width: 100%;
     height: auto;
 }
-#slider-wrap{ /* Оболочка слайдера и кнопок */
-    /*width:404px;*/
-    margin-left: auto;
-}
-#slider{ /* Оболочка слайдера */
-    /*width:400px;*/
-    height:400px;
-    overflow: hidden;
-    border: #68D6DC solid 2px;
-    position:relative;
-    }
-.slide{ /* Слайд */
-    width:100%;
-    height:100%;
-}
-.sli-links{ /* Кнопки смены слайдов */
-    margin-top:10px;
-    text-align:center;}
-.sli-links .control-slide{
-    margin:2px;
-    display:inline-block;
-    width:16px;
-    height:16px;
-    overflow:hidden;
-    text-indent:-9999px;
-    background:url(../img/radioBg.png) center bottom no-repeat;}
-.sli-links .control-slide:hover{
-    cursor:pointer;
-    background-position:center center;}
-.sli-links .control-slide.active{
-    background-position:center top;}
-#prewbutton, #nextbutton{ /* Ссылка "Следующий" и "Педыдущий" */
-    display:block;
-    width:15px;
-    height:100%;
-    position:absolute;
-    top:0;
-    overflow:hidden;
-    text-indent:-999px;
-    background:url(../img/arrowBg.png) left center no-repeat;
-    opacity:0.8;
-    z-index:3;
-    outline:none !important;}
-#prewbutton{left:10px;}
-#nextbutton{
-    right:10px;
-    background:url(../img/arrowBg.png) right center no-repeat;}
-#prewbutton:hover, #nextbutton:hover{
-    opacity:1;}
-.sprite {
-    background-image: url(../img/sprite.png);
-    background-repeat: no-repeat;
-    display: block;
-}
 
-.sprite-icon-blue {
-    width: 200px;
-    height: 55px;
-    background-position: -5px -5px;
-}
-
-.sprite-icon-orange {
-    width: 200px;
-    height: 55px;
-    background-position: -5px -70px;
-}
-
-.sprite-icon-pink {
-    width: 200px;
-    height: 55px;
-    background-position: -5px -135px;
-}
-
-.sprite-icon-yellow {
-    width: 200px;
-    height: 55px;
-    background-position: -5px -200px;
-}
 
 header {
 	border-bottom: 1px dashed black;
@@ -140,9 +68,18 @@ header {
 .header-logo {
     position: relative;
 }
+header h1 {
+    font-size: 45px;
+    font-weight: bold;
+    font-family: 'Jura', sans-serif;
+    text-align: center;
+    padding-bottom: 20px;
+    text-shadow:  1px 1px 1px #eee, 2px 2px 1px #707070;
+
+}
 .header-logo .scissors {
     position: absolute;
-    top: 85px;
+    top: 52px;
     right: 0px;
 }
 .container-fluid {
@@ -156,8 +93,8 @@ main .content {
     color: #000;
     font-family: Cassandra;
     font-size: 1.9em;
+    text-shadow: 1px 0px 1px  darkgray;
     background: none;
-    /*padding-bottom: 40px;*/
     -webkit-transition: color 0.2s ease;
 
 }
@@ -172,6 +109,7 @@ main .content {
     background-position: center;
     color: #9D5B22;
 }
+
 
 div.text {
     min-height: 575px;
