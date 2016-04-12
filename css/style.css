@@ -3,15 +3,17 @@
     display: table;
     clear: both;
 }
+
 body {
-	margin: 0;
+    margin: 0;
     font: 100%/1.5em;
-	font-family: 'Marmelad', sans-serif;
-	color: black;
+    font-family: 'Marmelad', sans-serif;
+    color: black;
     /*background: url("../img/hair.jpg");
     background-repeat: no-repeat;*/
 
 }
+
 .fluid-bg {
     background: url("../img/paper.png");
 }
@@ -20,6 +22,7 @@ body {
     .fluid-bg {
         background: url("../img/hair.jpg") no-repeat;
     }
+
     .content div.text, .services-text div.services-text-price {
         background-color: rgba(238, 233, 233, 0.7);
     }
@@ -32,11 +35,13 @@ body {
     }
 
 }
+
 @media screen and (max-width: 562px) {
-   header .header-logo .scissors {
+    header .header-logo .scissors {
         top: 100px;
     }
 }
+
 @media screen and (max-width: 767px) {
     .services-text-price h2.price {
         padding-top: 0%;
@@ -45,40 +50,44 @@ body {
 
 }
 
-
 @font-face {
     font-family: Cassandra;
     src: url(../fonts/Cassandra.ttf);
 }
+
 img {
     max-width: 100%;
     height: auto;
 }
 
-
 header {
-	border-bottom: 1px dashed black;
+    border-bottom: 1px dashed black;
 }
+
 .header-logo {
     position: relative;
 }
+
 header h1 {
     font-size: 45px;
     font-weight: bold;
     font-family: 'Jura', sans-serif;
     text-align: center;
     padding-bottom: 20px;
-    text-shadow:  1px 1px 1px #eee, 2px 2px 1px #707070;
+    text-shadow: 1px 1px 1px #eee, 2px 2px 1px #707070;
 
 }
+
 .header-logo .scissors {
     position: absolute;
     top: 52px;
     right: 0px;
 }
+
 .container-fluid {
-	max-width: 970px;
+    max-width: 970px;
 }
+
 main .content {
     margin-top: 40px;
 }
@@ -87,16 +96,17 @@ main .content {
     color: #000;
     font-family: Cassandra;
     font-size: 1.9em;
-    text-shadow: 1px 0px 1px  darkgray;
+    text-shadow: 1px 0px 1px darkgray;
     background: none;
     -webkit-transition: color 0.2s ease;
 
 }
 
 #navigation li a:hover {
-     color: darkgray;
+    color: darkgray;
 
- }
+}
+
 #navigation li.active a {
     background-image: url("../img/lak.png");
     background-repeat: no-repeat;
@@ -104,25 +114,28 @@ main .content {
     color: #9D5B22;
 }
 
-
 div.text {
 
     background-color: rgba(255, 255, 255, 0.5);
-    
+
 }
+
 div.text h1 {
     font-size: 2.0em;
     font-family: Cassandra;
     color: #983C05;
 }
+
 div.text p {
     font-size: 1.4em;
     line-height: 1.5em;
     font-family: 'Jura', sans-serif;
 }
+
 .index-page-text {
     margin-bottom: 20px;
 }
+
 .about-myself-text {
     margin-bottom: 20px;
 }
@@ -130,6 +143,7 @@ div.text p {
 .about-myself-img {
     padding: 0;
 }
+
 .services-text-price {
     background-color: rgba(255, 255, 255, 0.5);
     margin: 0;
@@ -137,12 +151,14 @@ div.text p {
     padding: 0;
 
 }
+
 .index-page-galery li a {
     text-decoration: none;
     display: block;
     margin-right: 25px;
     margin-top: 15px;
 }
+
 .index-page-galery li.active a {
     display: block;
     background: #68D6DC;
@@ -153,6 +169,7 @@ div.text p {
     margin-right: 25px;
     margin-top: 15px;
 }
+
 .circle {
     display: block;
     background: #983C05;
@@ -161,9 +178,11 @@ div.text p {
     width: 12px;
     margin: 0;
 }
+
 .index-page-img {
     text-align: center;
 }
+
 .index-page-galery li {
     list-style: none;
     display: inline-block;
@@ -176,26 +195,31 @@ div.text p {
     padding-top: 3%;
     padding-left: 1%;
 }
- .services-text-price h3 {
-     font-size: 2.0em;
-     font-family: Cassandra;
-     color: #983C05;
+
+.services-text-price h3 {
+    font-size: 2.0em;
+    font-family: Cassandra;
+    color: #983C05;
 
 }
+
 .services-text-price p {
     font-size: 1.38em;
     font-family: 'Jura', sans-serif;
     color: #001C2F;
 }
+
 .row1 {
     margin-bottom: 20px;
 }
+
 .contacts-address {
     margin-bottom: 20px;
 }
 
 div.content {
     padding-left: 30px;
+
 }
 
 footer {
@@ -206,6 +230,7 @@ footer {
     min-height: 70px;
 
 }
+
 .footer-email {
     font-family: 'Jura', sans-serif;
     font-size: 16px;
@@ -228,9 +253,7 @@ footer {
     text-decoration: none;
     border-radius: 5px;
 
-    transition:
-
-            background-color 0.5s;
+    transition: background-color 0.5s;
 }
 
 .social-btn:hover {
@@ -246,11 +269,10 @@ footer {
 }
 
 .social-btn-vk:hover {
-    background: black  url("../img/icon-vk.png") no-repeat center;
+    background: black url("../img/icon-vk.png") no-repeat center;
 }
 
-
 .social-btn-inst:hover {
-    background: black  url("../img/icon-inst.png") no-repeat center;
+    background: black url("../img/icon-inst.png") no-repeat center;
 }
 
