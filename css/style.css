@@ -49,6 +49,11 @@ body {
     }
 
 }
+@media screen and (max-width: 440px) {
+    div.footer-email {
+        margin-right: 10%;
+    }
+}
 
 @font-face {
     font-family: Cassandra;
@@ -104,6 +109,7 @@ main .content {
 
 #navigation li a:hover {
     color: darkgray;
+    outline: none;
 
 }
 
@@ -112,6 +118,7 @@ main .content {
     background-repeat: no-repeat;
     background-position: center;
     color: #9D5B22;
+    outline: none;
 }
 
 div.text {
@@ -208,7 +215,11 @@ div.text p {
     font-family: 'Jura', sans-serif;
     color: #001C2F;
 }
-
+p.star {
+    font-size: 1.2em;
+    font-family: 'Jura', sans-serif;
+    color: #001C2F;
+}
 .row1 {
     margin-bottom: 20px;
 }
