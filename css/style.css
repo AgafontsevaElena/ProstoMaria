@@ -26,7 +26,12 @@ body {
     .content div.text, .services-text div.services-text-price {
         background-color: rgba(238, 233, 233, 0.7);
     }
-
+    .header-logo .scissors {
+        animation: move 4s linear forwards, rotate 1s linear 4s forwards, move1 4s linear 5s forwards, rotate1 1s linear 9s forwards;
+    }
+    .page-galery-margin {
+        margin-bottom: 90px;
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -120,7 +125,37 @@ main .content {
     color: #9D5B22;
     outline: none;
 }
-
+.action {
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: inset rgba(0, 0, 0, .5) -2px -2px 6px,
+    inset rgba(255, 255, 255, .9) 2px 2px 6px,
+    rgba(0, 0, 0, .8) 1px 1px 2px -4px;
+}
+.action .action-title {
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Jura', sans-serif;
+    text-align: center;
+    text-shadow: 1px 1px 1px #eee, 2px 2px 1px #707070;
+    color: #6CA815;
+    animation: color 10s linear infinite;
+}
+.action .action-description {
+    font-size: 28px;
+    font-weight: bold;
+}
+.action .action-price {
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Jura', sans-serif;
+    text-align: center;
+    text-shadow: 1px 1px 1px #eee, 1px 1px 1px #707070;
+}
+.action .action-equally {
+    font-weight: normal;
+    font-size: 32px;
+}
 div.text {
 
     background-color: rgba(255, 255, 255, 0.5);
@@ -132,13 +167,37 @@ div.text h1 {
     font-family: Cassandra;
     color: #983C05;
 }
-
+div.text h1.forphoto {
+    font-size: 2.4em;
+    color: #983C05;
+}
+div.text h1.forwedding {
+    font-size: 2.4em;
+    color: #68D6DC;
+}
+div.text h1.transformation {
+    font-size: 2.4em;
+    color: #6CA815;
+}
 div.text p {
     font-size: 1.4em;
     line-height: 1.5em;
     font-family: 'Jura', sans-serif;
 }
-
+.transformation li {
+    list-style: none;
+}
+.transformation a {
+    font-size: 1.4em;
+    line-height: 1.5em;
+    font-family: 'Jura', sans-serif;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+.transformation a:hover {
+    color: #983C05;
+}
 .index-page-text {
     margin-bottom: 20px;
 }
@@ -176,7 +235,9 @@ div.text p {
     margin-right: 25px;
     margin-top: 15px;
 }
-
+.index-page-galery li.active a.circle4 {
+    animation: none;
+}
 .circle {
     display: block;
     background: #983C05;
@@ -185,7 +246,9 @@ div.text p {
     width: 12px;
     margin: 0;
 }
-
+.circle4 {
+    animation: circle 1s linear alternate-reverse infinite;
+}
 .index-page-img {
     text-align: center;
 }
@@ -197,7 +260,7 @@ div.text p {
 
 .services-text-price h2 {
     font-size: 28px;
-    color: #983C05;
+    color: #6CA815;
     font-family: Cassandra;
     padding-top: 3%;
     padding-left: 1%;
@@ -227,7 +290,22 @@ p.star {
 .contacts-address {
     margin-bottom: 20px;
 }
-
+.contacts-address .phone {
+    text-decoration: none;
+    color: #0f0f0f;
+    font-weight: bold;
+}
+.viber {
+    font-weight: bold;
+    animation:  vibercolor 3s linear alternate-reverse  infinite;
+}
+.whatsapp {
+    font-weight: bold;
+    animation:  whatsappcolor 3s linear alternate-reverse  infinite;
+}
+.contacts-address .phone:hover{
+    color: #983C05;
+}
 div.content {
     padding-left: 30px;
 
@@ -287,3 +365,44 @@ footer {
     background: black url("../img/icon-inst.png") no-repeat center;
 }
 
+@keyframes move {
+    from {right:0;}
+    to {right: 850px;}
+}
+
+@keyframes rotate {
+    to {transform: rotateY(180deg);}
+}
+
+@keyframes move1 {
+    from {right: 850px;}
+    to {right: 0;}
+}
+@keyframes rotate1 {
+    from {transform: rotateY(180deg);}
+    to {transform: rotateY(360deg);}
+}
+@keyframes color {
+    from { color: #6CA815; }
+    33% { color: #68D6DC;  }
+    66% {color: #983C05;}
+    to { color: #6CA815; }
+}
+
+@keyframes vibercolor {
+    from { color: black; }
+    20% {color: #7D0372;}
+    to {color: #7D0372;}
+}
+
+@keyframes whatsappcolor {
+    from { color: black; }
+    20% {color: #2FB80A;}
+    to { color: #2FB80A; }
+}
+
+@keyframes circle {
+    20% {background: #6CA815;}
+    80% {background: #6CA815;}
+    to {background: #6CA815; }
+}
