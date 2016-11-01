@@ -15,6 +15,7 @@
           type='text/css'>
     <link rel="icon" type="image/vnd.microsoft.icon" href="img/favicon.ico">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/website.css" type="text/css" media="screen"/>
 
 </head>
 <body class="fluid-bg">
@@ -83,48 +84,21 @@
                                 </ul>
                             </div>
                             <div class="index-page-img col-xs-11  col-sm-6 col-sm-offset-3 col-md-5 col-md-offset-1">
+                                <div id="rotatescroll">
+                                    <div class="viewport">
+                                        <ul class="overview">
+                                            <li><a href="http://www.baijs.nl"><img src="img/mari2.jpg" /></a></li>
+                                            <li><a href="http://www.baijs.nl"><img src="https://scontent-fra3-1.cdninstagram.com/t51.2885-15/e35/p320x320/14498894_244318932637140_4680320141278314496_n.jpg?ig_cache_key=MTM1MjI5MDE2Nzc1MDYwNjY2Mg%3D%3D.2" /></a></li>
+                                            <li><a href="http://www.baijs.nl"><img src="img/mari.jpg" /></a></li>
+                                            <li><a href="http://www.baijs.nl"><img src="img/girl.jpg" /></a></li>
+                                            <li><a href="http://www.baijs.nl"><img src="img/anton.jpg" /></a></li>
+                                        </ul>
+                                    </div>
 
-                                <div class="tab-content">
-                                    <div class="tab-pane active" id="photo1"><img
-                                            src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/12346191_1538489006463788_230775513_n.jpg?ig_cache_key=MTE0NTgwNTk3NTY2NzExMDAwOQ%3D%3D.2"
-                                            width="400" height="400" alt="Прическа для фотосессии"></div>
-                                    <div class="tab-pane" id="photo2"><img
-                                            src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/12276731_179267729090261_1652456728_n.jpg?ig_cache_key=MTEzNDg1MTAxNTQ5NjQ2MjU0Ng%3D%3D.2"
-                                            width="400" height="400" alt="Прическа для фотосессии"></div>
-                                    <div class="tab-pane" id="photo3"><img
-                                            src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/12354078_1123581257676549_701792992_n.jpg?ig_cache_key=MTE0NTgwNTQ5MjAzMDMwNDM2MA%3D%3D.2"
-                                            width="400" height="400" alt="Прическа для фотосессии"></div>
-                                    <div class="tab-pane" id="photo4"><a href="https://www.instagram.com/prostomariya12/"><img
-                                            src="img/wedding2.jpg" width="400" height="400" alt="Прическа свадебная"></a></div>
+                                    <div class="dot"></div>
+                                    <div class="overlay"></div>
+                                    <div class="thumb"></div>
                                 </div>
-
-                                <ul class="index-page-galery page-galery-margin">
-                                    <li class="active"><a class="circle" href="#photo1" data-toggle="tab"></a></li>
-                                    <li><a class="circle" href="#photo2" data-toggle="tab"></a></li>
-                                    <li><a class="circle" href="#photo3" data-toggle="tab"></a></li>
-                                    <li><a class="circle circle4" href="#photo4" data-toggle="tab"></a></li>
-                                </ul>
-
-                                <div class="tab-content">
-                                    <div class="tab-pane active" id="photo5"><img
-                                            src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/1389573_933729553340941_1755199592_n.jpg?ig_cache_key=MTE0NTgwNTg1OTk2MzAzOTg2Mw%3D%3D.2"
-                                            width="400" height="400" alt="Прическа для фотосессии"></div>
-                                    <div class="tab-pane" id="photo6"><img
-                                            src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/12519488_1091229424250713_1314133297_n.jpg?ig_cache_key=MTE2NTM4MzMzOTYxMDc2MzUwNQ%3D%3D.2"
-                                            width="400" height="400" alt="Прическа для фотосессии"></div>
-                                    <div class="tab-pane" id="photo7"><img
-                                            src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/12960021_1004701532943377_313566080_n.jpg?ig_cache_key=MTIzNjIyNTE1NjE0ODkxNzE0OQ%3D%3D.2"
-                                            width="400" height="400" alt="Прическа"></div>
-                                    <div class="tab-pane" id="photo8"><a href="https://www.instagram.com/prostomariya12/"><img
-                                            src="img/wedding.jpg" width="400" height="400" alt="Прическа свадебная"></a></div>
-                                </div>
-
-                                <ul class="index-page-galery">
-                                    <li class="active"><a class="circle" href="#photo5" data-toggle="tab"></a></li>
-                                    <li><a class="circle" href="#photo6" data-toggle="tab"></a></li>
-                                    <li><a class="circle" href="#photo7" data-toggle="tab"></a></li>
-                                    <li><a class="circle circle4" href="#photo8" data-toggle="tab"></a></li>
-                                </ul>
 
                             </div>
                         </div>
@@ -226,6 +200,13 @@
                 <a class="social-btn social-btn-inst" href="https://www.instagram.com/prostomariya12/">Инстаграм</a>
             </section>
         </footer>
+        <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="js/jquery.tinycircleslider.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#rotatescroll').tinycircleslider({ interval: true, snaptodots: true });
+            });
+        </script>
         <script>
             $(function () {
                 $('#navigation a').click(function (e) {
