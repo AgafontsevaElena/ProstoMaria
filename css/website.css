@@ -4,7 +4,7 @@ img { border: 0; }
 #rotatescroll { 
 	height:300px; 
 	position:relative; 
-	width:300px; 
+	width:300px;
 }
 
 #rotatescroll .viewport{
@@ -33,11 +33,11 @@ img { border: 0; }
 	}
 
 #rotatescroll .overlay {
-	background:url(../img/bg-rotatescroll.png) no-repeat 0 0; 
+	background:url(../img/bg-rotatescroll.png) no-repeat 0 0;
 	 position: absolute; 
 	 left: 0; 
 	 top: 0;
-	  height:300px; 
+	  height:300px;
 	  width:300px;
 	   }
 
